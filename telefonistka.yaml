@@ -1,0 +1,6 @@
+dryRunMode: true
+promotionPaths:
+- sourcePath: "redis/"
+  promotionPrs:
+  - targetPaths:
+    - "clusters/dev/us-east1/redis"
