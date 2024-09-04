@@ -1,5 +1,6 @@
 promotionPaths:
-- sourcePath: "redis/"
+- sourcePath: "workspace/"
   promotionPrs:
   - targetPaths:
-    - "clusters/dev/us-east1/"
+    - "clusters/dev/us-east1"
+    - "clusters/dev/us-east2"
