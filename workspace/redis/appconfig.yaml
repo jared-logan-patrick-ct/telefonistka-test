@@ -1,4 +1,4 @@
-name: something-else
+name: redis
 ignoreDifferences:
   - group: ""
     kind: Service
