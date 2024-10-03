@@ -1,1 +1,6 @@
 name: something-else
+ignoreDifferences:
+ - group: apps
+    kind: Deployment
+    jsonPointers:
+      - /spec/replicas
