@@ -3,4 +3,4 @@ ignoreDifferences:
   - group: ""
     kind: Service
     jqPathExpressions:
-      - .spec.ports[].nodePort
+      - '.spec.ports[].nodePort'
