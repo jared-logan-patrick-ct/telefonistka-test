@@ -1,5 +1,5 @@
 name: redis
-ignoreDifferences:
+ignoreDifferences: |
   - group: ""
     kind: Service
     jqPathExpressions:
