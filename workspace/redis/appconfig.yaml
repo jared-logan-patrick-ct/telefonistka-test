@@ -4,9 +4,3 @@ ignoreDifferences:
     kind: Service
     jqPathExpressions:
       - '.spec.ports[].nodePort'
-  - group: apps
-    kind: Deployment
-    name: guestbook
-    namespace: default
-    jsonPointers:
-    - /spec/replicas
