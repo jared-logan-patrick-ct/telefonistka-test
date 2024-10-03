@@ -1,5 +1,5 @@
 name: redis
-ctExtraAppConfig:
+ct_extraAppConfig:
   ignoreDifferences:
     - group: ""
       kind: Service
