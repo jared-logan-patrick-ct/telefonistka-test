@@ -1,6 +1,6 @@
 name: redis
-# ignoreDifferences:
-#   - group: ""
-#     kind: Service
-#     jqPathExpressions:
-#       - '.spec.ports[].nodePort'
+ignoreDifferences:
+  - group: ""
+    kind: Service
+    jqPathExpressions:
+      - '.spec.ports[].nodePort'
