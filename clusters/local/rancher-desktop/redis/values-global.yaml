@@ -1,0 +1,7 @@
+name: redis
+ct_extraAppConfig:
+  ignoreDifferences:
+    - group: ""
+      kind: Service
+      jqPathExpressions:
+        - '.spec.ports[].nodePort'
