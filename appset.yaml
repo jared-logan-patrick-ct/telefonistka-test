@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: guestbook
+spec:
+  goTemplate: true
+  goTemplateOptions: ["missingkey=error"]
+  generators:
+  - git:
+      repoURL: https://github.com/jared-logan-patrick-ct/telefonistka-test
+      revision: HEAD
+      directories:
+      - path: workspace/*
+  template:
+    metadata:
+      name: '{{ index .path.segments 1 }}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/jared-logan-patrick-ct/telefonistka-test
+        targetRevision: HEAD
+        path: '{{ .path.path }}'
+      destination:
+        server: 'in-cluster'
+        namespace: default

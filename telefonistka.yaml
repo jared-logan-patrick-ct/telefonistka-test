@@ -2,5 +2,4 @@ promotionPaths:
 - sourcePath: "workspace/"
   promotionPrs:
   - targetPaths:
-    - "clusters/dev/us-east1/"
-    - "clusters/dev/us-west1/"
+    - "clusters/local/rancher-desktop/"
