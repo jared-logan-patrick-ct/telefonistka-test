@@ -1300,7 +1300,7 @@ sentinel:
       - ReadWriteOnce
     ## @param sentinel.persistence.size Persistent Volume size
     ##
-    size: 100Mi
+    size: 90Mi
     ## @param sentinel.persistence.annotations Additional custom annotations for the PVC
     ##
     annotations: {}
