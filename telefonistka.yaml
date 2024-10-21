@@ -3,3 +3,4 @@ promotionPaths:
   promotionPrs:
   - targetPaths:
     - "clusters/local/rancher-desktop/"
+autoApprovePromotionPrs: true
