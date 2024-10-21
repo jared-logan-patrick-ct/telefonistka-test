@@ -4,3 +4,5 @@ promotionPaths:
   - targetPaths:
     - "clusters/local/rancher-desktop/"
 autoApprovePromotionPrs: true
+argocd:
+  autoMergeNoDiffPRs: true
