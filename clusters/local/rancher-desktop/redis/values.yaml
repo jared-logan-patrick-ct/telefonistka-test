@@ -467,7 +467,7 @@ master:
   initContainers: []
   ## Persistence parameters
   ## ref: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
-  ##
+  ## bogus change
   persistence:
     ## @param master.persistence.enabled Enable persistence on Redis&reg; master nodes using Persistent Volume Claims
     ##
