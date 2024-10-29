@@ -5,4 +5,4 @@ ctArgoAppConfig:
     kind: Service
     jqPathExpressions:
     - '.spec.ports[].nodePort'
-  cloudProvider: gcp
+  cloudProvider: inCluster
