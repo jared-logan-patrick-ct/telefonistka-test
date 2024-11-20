@@ -1,0 +1,5 @@
+ignoreDifferences:
+- group: ""
+  kind: Service
+  jqPathExpressions:
+  - '.spec.ports[].nodePort'
