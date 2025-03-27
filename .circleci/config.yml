@@ -19,7 +19,10 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run:
-          command: "echo $CIRCLE_OIDC_TOKEN"
+          command: "echo $CIRCLE_OIDC_TOKEN" > /tmp/token
+      - store_artifacts:
+          path: /tmp/token
+          destination: token
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
